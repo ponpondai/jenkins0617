@@ -1,0 +1,10 @@
+pipeline {
+    agent { label 'slave1' }
+    stages {
+        stage('mkdir') {
+            steps {
+                sh "mkdir 123"
+            }
+        }
+    }
+}
